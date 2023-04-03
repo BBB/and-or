@@ -1,5 +1,5 @@
 {
-  "name": "@ollierelph/and-or4t",
+  "name": "@ollierelph/and-or",
   "version": "0.0.2",
   "description": "",
   "main": "dist/index.js",
@@ -14,14 +14,14 @@
     "test": "pnpm vitest",
     "build": "pnpm tsc -p tsconfig.build.json",
     "format": "prettier --write ./",
-    "publish-package": "echo \"$(jq --arg name \"${NAME_TO_PUBLISH:-@ollierelph/and-or4t}\" '.name|=$name' package.json)\" > package.json && pnpm publish --access public --no-git-checks"
+    "publish-package": "echo \"$(jq --arg name \"${NAME_TO_PUBLISH:-@ollierelph/and-or}\" '.name|=$name' package.json)\" > package.json && pnpm publish --access public --no-git-checks"
   },
   "files": [
     "./dist/*"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBB/and-or4t.git"
+    "url": "https://github.com/BBB/and-or.git"
   },
   "keywords": [
     "fp",
