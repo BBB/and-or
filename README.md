@@ -28,8 +28,8 @@ console.log(one.or(two).or(three));
  * Gives us:
  * [["ONE"], ["TWO"], ["THREE"]]
  */
-console.log(one.or(two.and(three)));
 
+console.log(one.or(two.and(three)));
 /**
  * Gives us:
  * [["ONE"], ["TWO", "THREE"]]
