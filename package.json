@@ -1,0 +1,39 @@
+{
+  "name": "@ollierelph/and-or",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
+    "@types/node": "^18.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4",
+    "vitest": "^0.15.2"
+  },
+  "scripts": {
+    "test": "pnpm vitest",
+    "build": "pnpm tsc -p tsconfig.build.json",
+    "format": "prettier --write ./",
+    "publish-package": "echo \"$(jq --arg name \"${NAME_TO_PUBLISH:-@ollierelph/and-or}\" '.name|=$name' package.json)\" > package.json && pnpm publish --access public --no-git-checks"
+  },
+  "files": [
+    "./dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBB/and-or.git"
+  },
+  "keywords": [
+    "fp",
+    "result",
+    "option",
+    "monad",
+    "typescript",
+    "typesafe",
+    "promises",
+    "task",
+    "node"
+  ],
+  "author": "Ollie Relph",
+  "license": "MIT"
+}
