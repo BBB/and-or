@@ -9,3 +9,10 @@ Available now
 ## What's this?
 
 `and-or4t` allows you to build 2d arrays of options to iterate over
+
+```typescript
+
+const one = new Single("ONE");
+const two = new Single("TWO");
+const three = new Single("THREE");
+```
