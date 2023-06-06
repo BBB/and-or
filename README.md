@@ -29,9 +29,9 @@ console.log(one.or(two).or(three));
  * [["ONE"], ["TWO"], ["THREE"]]
  */
 
-console.log(one.or(two.and(three)));
+console.log(one.or(two).and(three));
 /**
  * Gives us:
- * [["ONE"], ["TWO", "THREE"]]
+ * [["ONE", "THREE"], ["TWO", "THREE"]]
  */
 ```
