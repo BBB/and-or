@@ -38,11 +38,6 @@ jobs:
     - name: Build and Publish (if required)
       run: |
         pnpm build
-        if node bin/needs-publish.js "and-or" $(node -pe "require('./package.json').version") ; then
-          NAME_TO_PUBLISH=and-or pnpm run publish-package
-        else
-          echo "and-or Version already published"
-        fi
 
         if node bin/needs-publish.js "@ollierelph/and-or" $(node -pe "require('./package.json').version") ; then
           NAME_TO_PUBLISH="@ollierelph/and-or" pnpm run publish-package
