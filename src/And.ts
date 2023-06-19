@@ -10,11 +10,11 @@ export class And<T> implements Operation<T> {
       .flatMap((left) => this.right.all().map((it) => left.concat(it)));
   }
 
-  or(other: Operation<T>) {
+  or(other: Operation<T>): Or<T> {
     return new Or(this, other);
   }
 
-  and(other: Operation<T>) {
+  and(other: Operation<T>): And<T> {
     return new And(this, other);
   }
 }

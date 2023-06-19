@@ -1,7 +1,5 @@
-import { Single } from "../src/Single";
-import { expect, it, describe } from "vitest";
-import { Or } from "../src/Or";
-import { And } from "../src/And";
+import { And, Or, Single } from "../src";
+import { describe, expect, it } from "vitest";
 
 const one = new Single("ONE");
 const two = new Single("TWO");

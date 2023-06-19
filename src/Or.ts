@@ -8,11 +8,11 @@ export class Or<T> implements Operation<T> {
     return this.left.all().concat(this.right.all());
   }
 
-  or(other: Operation<T>) {
+  or(other: Operation<T>): Or<T> {
     return new Or(this, other);
   }
 
-  and(other: Operation<T>) {
+  and(other: Operation<T>): And<T> {
     return new And(this, other);
   }
 }
